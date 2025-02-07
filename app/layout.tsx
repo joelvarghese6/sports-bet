@@ -3,16 +3,6 @@ import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
 import ContextProvider from "@/context";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const font = Nunito({subsets: ["latin"]});
 
 
@@ -35,7 +25,6 @@ export default async function RootLayout({
         <ContextProvider >
           {children}
         </ContextProvider>
-
       </body>
     </html>
   );
